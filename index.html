@@ -23,12 +23,15 @@
 
   <div id="app">
     <div class="container-carousel">
-      <div class="carousel-csm">
+      <div
+        class="carousel-csm"
+        @mouseenter="autoplay = false"
+        @mouseleave="autoplay = true">
   
         <div class="carousel-img">
           <!-- vue add image -->
           <div class="img-car">
-            <img :src="elements[viewImage].src">
+            <img :src="elements[viewImage].src" >
             <div class="carousel-text">
               <h3>{{elements[viewImage].title}}</h3>
               <p>{{elements[viewImage].text}}</p>

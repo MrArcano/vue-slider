@@ -27,6 +27,7 @@ createApp({
       }
       ],
       viewImage: 0,
+      autoplay: true
     }
   },
   methods: {
@@ -43,6 +44,9 @@ createApp({
   },
   mounted() {
     console.log("Montato");
+    setInterval(() => {
+      this.autoplay ? this.nextOrPrev(true) : ""
+    }, 3000);
   },
 
 }).mount("#app")

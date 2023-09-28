@@ -8,7 +8,8 @@
 }
 
 body{
-  background-color: darkseagreen;
+  background-color:tomato;
+  /* background-color: #0f4343; */
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -24,12 +25,12 @@ body{
 }
 
 .carousel-csm{
-  height: 300px;
+  height: 400px;
   display: flex;
 }
 
 .carousel-img{
-  width: 700px;
+  aspect-ratio: 2/1;
   height: 100%;
 
   position: relative;

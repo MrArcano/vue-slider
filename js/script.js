@@ -3,7 +3,7 @@ const {createApp} = Vue;
 createApp({
   data() {
     return {
-      images: [
+      elements: [
         {
           src: 'img/01.webp',
           title: 'Marvel\'s Spiderman Miles Morale',
@@ -32,12 +32,11 @@ createApp({
   methods: {
     nextOrPrev(isNext){
       isNext ? this.viewImage++ : this.viewImage--;
-      
-      console.log(this.images);
-      if (this.viewImage === this.images.lenght){
+
+      if (this.viewImage === this.elements.length){
         this.viewImage = 0;
       }else if(this.viewImage < 0){
-        this.viewImage = this.images.lenght - 1;
+        this.viewImage = this.elements.length - 1;
       }
     }
     

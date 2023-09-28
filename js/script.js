@@ -45,7 +45,7 @@ createApp({
   mounted() {
     console.log("Montato");
     setInterval(() => {
-      this.autoplay ? this.nextOrPrev(true) : ""
+      this.autoplay ? this.nextOrPrev(true) : null
     }, 3000);
   },
 
